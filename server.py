@@ -40,7 +40,7 @@ def connectionLoop(sock):
             # update the heartbeat value if data dictionary has a key called 'heartbeat'
             if 'heartbeat' in data:
                 clients[addr]['lastBeat'] = datetime.now()
-            else
+            else:
                 clients[addr]['Vectorplayer'] = json.loads(data)
                 
                 
